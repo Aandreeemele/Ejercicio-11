@@ -1,0 +1,55 @@
+:root {
+    --color1: #06080b;
+    --color11: #afc206b4;
+    --color111: #8f9608;
+}
+
+main {
+    width: 380px;
+    height: 600px;
+    background-color: var(--color1);
+
+    margin: auto;
+    margin-top: 5%;
+    padding: 25px;
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 100px;
+   
+}
+
+.pantalla {
+    font-size: 50px;
+    font-weight: 800px;
+    text-align: right;
+    background-color: var(--color111);
+
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 84.5px);
+    gap: 10px;
+    
+}
+
+.tecla{
+    font-size: 15px;
+    font-size: 30px;
+    color: var(--color11);
+    background-color: rgba(55, 78, 91, 0.521);
+
+    border-radius: 900px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.tecla0{
+    grid-column:-start: span;
+    grid-column-end: span ;
+}
